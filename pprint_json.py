@@ -10,11 +10,11 @@ def load_data(filepath):
         return None
 
 
-def pretty_print_json(data):
-    print (json.dumps(data, indent=4))
+def pretty_print_json(json_data):
+    print (json.dumps(json_data, indent=4))
 
 
 if __name__ == '__main__':
     script, from_file = argv
-    data = load_data(from_file)
-    pretty_print_json(data)
+    json_loaded_data = load_data(from_file)
+    pretty_print_json(json_loaded_data)
