@@ -4,7 +4,7 @@ Getting pretty print for json load file format.
 # How use
 
 Module contains 2 functions:
-```
+```python
 def load_data(filepath):
     ...
     return data
@@ -15,7 +15,7 @@ def pretty_print_json(data):
 ```
 Where filepath, it's path to load json file.
 Example:
-```
+```python
 import pprint_json
 filepath = "./json_file.json"
 data = load_data(filepath)
