@@ -1,13 +1,20 @@
 import json
+from sys import argv
 
 
 def load_data(filepath):
-    pass
+    try:
+        with open(filepath) as f:
+            return json.load(f) 
+    except (FileNotFoundError, json.decoder.JSONDecodeError):  
+        return None
 
 
 def pretty_print_json(data):
-    pass
+    print (json.dumps(data, indent=4))
 
 
 if __name__ == '__main__':
-    pass
+    script, from_file = argv
+    data = load_data(from_file)
+    pretty_print_json(data)
