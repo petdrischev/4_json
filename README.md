@@ -9,7 +9,7 @@ def load_data(filepath):
     ...
     return data
   
-def pretty_print_json(data):
+def pretty_print_json(json_data):
     ...
     print(json_data)
 ```
@@ -18,8 +18,8 @@ Example:
 ```python
 import pprint_json
 filepath = "./json_file.json"
-data = load_data(filepath)
-pretty_print_json(data)
+json_loaded_data = load_data(filepath)
+pretty_print_json(json_loaded_data)
 ```
 # Quickstart
 
