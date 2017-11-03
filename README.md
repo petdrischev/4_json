@@ -3,9 +3,25 @@
 Getting pretty print for json load file format.
 # How use
 
+Module contains 2 functions:
+```
+def load_data(filepath):
+    ...
+    return data
+  
+def pretty_print_json(data):
+    ...
+    print(json_data)
+```
+Where filepath, it's path to load json file.
+Example:
+```
+import pprint_json
+filepath = "./json_file.json"
+data = load_data(filepath)
+pretty_print_json(data)
+```
 # Quickstart
-
-[TODO]
 
 Example of script launch on Linux, Python 3.5:
 
